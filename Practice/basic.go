@@ -7,7 +7,7 @@ import (
 
 
 //自定义类型
-	type (
+type (
    IZ int
    FZ float64
    STR string
@@ -34,7 +34,7 @@ func init(){
 	fmt.Print(a)  
 	fmt.Print(b)
 */	
-  //fmt.Println(234)
+        //fmt.Println(234)
 	fmt.Println("==分隔符=====")
 	
 	
@@ -51,18 +51,18 @@ func init(){
 
 func main() {
 	
-  var val int32  //初始值 为0
+        var val int32  //初始值 为0
 	fmt.Println(val)
 	
 	a := 123;//自动根据值 来匹配类型
 	var b int32 = 223;//显式 赋值
 	fmt.Println(a,b)
 
-//必须显式 转换类型	
+        //必须显式 转换类型	
 	var a1 IZ = 5
 	b1 := int(a1)
 	c1 := IZ(b1)
-  fmt.Println(a1, b1,c1)
+        fmt.Println(a1, b1,c1)
 
 	fmt.Println( funcA( int32(a), b) )// a 由int显式转换成int32, 各个
 }
